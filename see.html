@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <title>cat with rabbit</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--<meta name="description" content="Slicebox - 3D Image Slider with Fallback" />-->
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+		<meta name="author" content="Pedro Botelho for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" href="http://dreamsky.github.io/main/blog/common/init.css">
+		<style>
+		.top-banner {
+			background-color: rgba(255, 255, 255, 0.55);
+			display: none;
+		}
+		.top-banner a {
+			color: #019135;
+			display: none;
+		}
+		.bdshare-slide-button-box{
+			/*display: none;*/
+			overflow:hidden;
+		}
+		h1 {
+			margin-top: 100px;
+			font-family: 'Microsoft Yahei';
+			font-size: 36px;
+			color: #019157;
+		}
+		</style>			
+		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>cat with rabbit</h1>
+			<!--
+			<div class="more">
+				<ul id="sb-examples">
+					<li><a href="index.html">效果一</a></li>
+					<li><a href="index2.html">效果二</a></li>
+					<li><a href="index3.html">效果三</a></li>
+					<li class="selected"><a href="index4.html">效果四</a></li>
+				</ul>
+			</div>
+			-->
+			<div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<img src="images/display/22.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>Hiฅ(*`ω´*)ฅ，呢个人是你木~</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/26.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>哪个？</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/2.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>这个~</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/26.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>不是(￣y▽￣)~*[狂甩舌头]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/29.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>哈~~~？居然不承认。。。。。。</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/3.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>还有这个~</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/4.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>这个~</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/7.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>[此刻，你应该打开，曲婉婷的一首歌<承认>ฅ^•ﻌ•^ฅ]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/8.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>加上这个~</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/26.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>。。。。</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/9.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>这个~[爱情，就是两个害怕独处的人一起逃避]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/10.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>[真奇怪，好像我们在一起的时间只属于我们--是我们自己创造出来的]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/11.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>[就好像，我在你的梦里，你也在我的梦里]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/12.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>这个~[我喜欢我望向别处时，他望向我的目光]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/13.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>[我觉得这就是生命为何如此有趣--因为它总有尽头]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/14.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>[据说男人会失去听高音的能力，女人不能听见低音，
+							我想他们这是在逃避对方的错误]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/16.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>[我认为这是自然规律，这样他们就能携手到老了~]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/15.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>(咬你)</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/5.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>(然后就晕了~哈哈)</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/24.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>[现在呢~(=①ω①=)~]</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/23.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>好吧~是我~ㄟ( ▔, ▔ )ㄏ </h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/28.jpg" alt="image1"/>
+						<div class="sb-description">
+							<h3>哦~其实我就只想说~我喜欢你呀(=^▽^=)~</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/display/19.jpg" alt="image1"/>
+						<div class="sb-description">
+						<a href="http://www.eyepetizer.net/detail.html?vid=5544&utm_campaign=routine&utm_medium=share&utm_source=qq&udid=c41b8b0a0744430f8aeed81b26df931d7d2e3951&vc=156&vn=3.1.1&deviceModel=m2%20note&first_channel=eyepetizer_meizu_market&last_channel=eyepetizer_meizu_market&system_version_code=22" target="_blank">
+							<h3>[好啦~点我一下吧]</h3>
+							</a>
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+			</div><!-- /wrapper -->
+			<div class="footer-banner" style="width:728px; margin:30px auto"></div>
+		</div>
+		<script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+		<!--<script src="http://dreamsky.github.io/main/blog/common/init.js"></script>  
+		//用于分享
+		-->
+	</body>
+</html>	
